@@ -1,0 +1,57 @@
+# Python bytecode:
+__pycache__
+*.py[co]
+
+# Packaging files:
+*.egg*
+
+# Editor temp files:
+*.swp
+*~
+.DS_STORE
+
+# Sphinx docs:
+build
+
+# SQLite3 database files:
+*.db
+
+# Celerybeat scheduler file:
+celerybeat-schedule
+
+.idea
+.htaccess
+*.iml
+
+# Editor temp files:
+*.sw[po]
+*~
+
+# ignore ctags files
+tags
+
+# python notebook files
+*ipynb*
+
+# Vim Rope plug in
+*.ropeproject*
+
+covid19/settings/local.py
+covid19/static/
+covid19/media/
+
+#local environemnt, settings, and data
+env/
+.venv
+.virtualenv/
+pids/
+logs/
+
+# Coverage
+.coverage
+htmlcov/
+
+.scrub.env
+
+# vscode Files
+.vscode
