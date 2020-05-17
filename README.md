@@ -15,6 +15,9 @@ Covid-19 Backend
 - Create Database
     `CREATE DATABASE covid19 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci`
 
+- Create local setting file, Copy covid19.settings.local.py.template and 
+create new file local.py at directory covid19.settings
+
 - Setup Database Table
     `python manage.py migrate`
 
