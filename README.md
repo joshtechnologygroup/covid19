@@ -21,6 +21,9 @@ create new file local.py at directory covid19.settings
 - Setup Database Table
     `python manage.py migrate`
 
+- Create Django Admin superuser
+    `python manage.py createsuperuser`
+
 - Run Local development server
     `python manage.py runserver`
 

@@ -45,7 +45,7 @@ class Settings(LoggerSettingsMixin, Configuration):
 
     # Application definition
 
-    INSTALLED_APPS = [
+    DJANGO_APPS = [
         'django.contrib.admin',
         'django.contrib.auth',
         'django.contrib.contenttypes',
@@ -53,6 +53,12 @@ class Settings(LoggerSettingsMixin, Configuration):
         'django.contrib.messages',
         'django.contrib.staticfiles',
     ]
+
+    LOCAL_APPS = [
+        'apps.accounts'
+    ]
+
+    INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS
 
     MIDDLEWARE = [
         'django.middleware.security.SecurityMiddleware',
@@ -65,6 +71,8 @@ class Settings(LoggerSettingsMixin, Configuration):
     ]
 
     ROOT_URLCONF = 'covid19.urls'
+
+    AUTH_USER_MODEL = 'accounts.User'
 
     TEMPLATES = [
         {
